@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansation&family=Zain&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#background{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/backgroundimagepg2.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    background-size: cover;
+
+}
+body > main{
+    flex: 1 1 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+}
+
+header > img{
+    height: 2rem;
+    padding: 1rem;
+}   
+h1{
+    color: #fff;
+    
+    text-align: center;
+    margin: 2em 0em ;
+    font: 500 1.5em "Poppins" ;
+    text-shadow: 2px 2px 4px #00000088;
+}
+section{
+    margin: 0% 20%;
+}
+article{
+    background-color:#ffffff ;
+    border-radius: 5px;
+    max-width: 50em;
+    height: 35em;
+    text-align: left;
+    margin: auto auto;
+    box-shadow: 2px 2px 6px #00000077;
+}
+
+article > h2{
+    padding: 2em 1em;
+    color: #000;
+    font: 700 1.6em "Poppins" ;
+    text-shadow: 1px 1px 1px #0000004d;
+}
+
+#seletor{
+    border: 1.5px solid #FF9900;
+    background-color: transparent;
+    margin: 0em 1em ;
+    width: 40vw;
+    display: flex;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px inset #0000006c;
+    font: 500 1.2em  "Poppins";   
+}
+a:link{
+    color: #fff;
+}
+a:hover{
+    color: #FF9900;
+}
+:visited{
+    color: #fff;
+}
+#seta{
+    background-color: transparent;
+    border: none;
+    
+}
+
+.voltar {
+    cursor: pointer;
+    display: inline-flex;
+    transform: rotatey(180deg);
+    margin: 1em 0em 0em 1em;
+}
+
