@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cancelamento/pagina2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tela2.css">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     
+
 </head>
 
 <body id="background">
@@ -21,52 +22,44 @@
 
     <main>
         <div class="voltar">
-            <button id="seta">
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 15 15">
-                    <path fill="currentColor" d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" stroke-width="0.7" stroke="currentColor" />
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 15 15" id="seta">
+                    <path fill="currentColor"
+                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
+                        stroke-width="0.7" stroke="currentColor" />
                 </svg>
-                </a>
-            </button>
+            </a>
         </div>
         <section>
             <h1>Dê um feedback para que possamos te ajudar</h1>
 
             <article>
                 <h2>Selecione o motivo da sua saída:</h2>
-                <select id="seletor">
-                    <option value="" selected  > Selecione uma página </option>
-                    <option href="cursoemvideo.com/meus-cursos/" class="item">Dificuldades com o suporte ao cliente.</option>
-                    <option value="" class="item" id="item2">Não encontrei o conteúdo que procurava.</option>
-                    <option value="" class="item" id="item3">A qualidade do curso que fiz não atendeu às minhas
-                    expectativas.</option>
-                    <option value="" class="item" id="item4"><a href="pagina.html">Estou fazendo outros cursos em outra plataforma.</a></option>
-                    <option value="" class="item" id="item5">Por hora, estou sem limites no cartão.</option>
-                    <option value="" class="item" id="item6">Não tenho interesse em cursos no momento</option>
-                    <option value="" class="item" id="item7">Já usei a plataforma e já fiz o curso que queria.</option>
-                    <option value="" class="item" id="item8">Não tenho tempo de usar a plataforma como queria.</option>
-                    <option value="" class="item" id="item9">Falta de atualizações regulares ou novos conteúdos.</option>
-                    <option value="outros" >outros</option>
+                <select id="seletor" onchange="redirect(this.value)" >
+                    
+                    <option value="#" class="item" id="item1">Dificuldades com o suporte ao cliente.
+                    </option>
+                    <option value="#" class="item" id="item2">Não encontrei conteúdo que procurava.</option>
+                    <option value="#" class="item" id="item3">A qualidade do curso que fiz não atendeu às minhas expectativas.</option>
+                    <option value="#" class="item" id="item4">Estou fazendo outros cursos em outra plataforma.</option>
+                    <option value="#" class="item" id="item5">Por hora, estou sem limites no cartão.</option>
+                    <option value="#" class="item" id="item6">Não tenho interesse em cursos no momento</option>
+                    <option value="#" class="item" id="item7">Já usei a plataforma e já fiz o curso que queria.
+                    </option>
+                    <option value="#" class="item" id="item8">Não tenho tempo de usar a plataformamcomo queria.</option>
+                    <option value="#" class="item" id="item9">Falta de atualizações regulares ou novos conteúdos.
+                    </option>
+
                 </select>
             </article>
         </section>
-        <script>
-      var links = document.querySelectorAll(".item");
-      var listaOpcoes = document.querySelector("#seletor");
-      for (var i = 0; i < links.length; i++) {
-        var link = links[i];
-        link.addEventListener("click", function(event) {
-          event.preventDefault();
-          listaOpcoes.value = event.target.getAttribute("data-opcao");
-        });
-      }
-    </script>
     </main>
     <footer>
 
     </footer>
+    <script src="tela2.js"></script>
 </body>
 
-        
+
 
 </html>
